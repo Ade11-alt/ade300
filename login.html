@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joselito</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo how you feel"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="login.html"><img src="images/User.png" alt="logo pixel Forge"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+         <div class="login">
+            <h1>LOGIN</h1>
+            <form id="loginForm">
+                <p>Username</p>
+                <input type="text" id="username" name="username" required>
+                <p>Password</p>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <a href="register.html">Don't have an account? Register here</a>
+            </form>
+            <p id="errorMessage" style="color: white;"></p>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

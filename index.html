@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joselito</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script lang="text/javascript" src="js/simple-web-serial.min.js"></script>
+</head>
+<body>
+
+    <!-- <header class="header">
+        <div class="logo">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo how you feel"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="login.html"><img src="images/User.png" alt="logo pixel Forge"></a></li>
+            </ul>
+        </div>
+    </header> -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="anger" id="angerDiv">
+        <h1>ANGER</h1>
+        <p>Anger is a strong feeling of displeasure or hostility. It can be a response to perceived threats, injustice, or frustration.</p>
+        <p>It can be expressed in various ways, from mild irritation to intense rage.</p>
+        <p>Understanding and managing anger is important for emotional well-being.</p>
+        <div class="anger-buttons">
+            <button onclick="toggleAnger()">Close</button>
+            <button onclick="toggleLED(0)">Apply</button>
+        </div>
+    </div>
+
+    <div class="surprise" id="surpriseDiv">
+        <h1>Surprise</h1>
+        <p>This is a neutral emotion that occurs when something unexpected happens. It can be positive (a pleasant surprise), negative (a sudden threat), or neutral (a curious event). Surprise usually lasts only a few seconds before evolving into another emotion.</p>
+        <div class="surprise-buttons">
+            <button onclick="toggleSurprise()">Close</button>
+            <button>Apply</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="emotions">
+            <h1>HOW <br> YOU <br> FEEL</h1>
+            <div class="red">
+                <button onclick="toggleAnger()">Anger</button>
+            </div>
+            <div class="orange">
+                <button onclick="toggleSurprise()">Surprise</button>
+            </div>
+            <div class="yellow">
+                <button onclick="location.href='joy.html'">Joy</button>
+            </div>
+            <div class="green"> 
+                <button onclick="location.href='disgust.html'">Disgust</button>
+            </div>
+            <div class="blue">
+                <button onclick="location.href='confidence.html'">Confidence</button>
+            </div>
+            <div class="darkblue">
+                <button onclick="location.href='sadness.html'">Sadness</button>
+            </div>
+            <div class="purple">
+                <button onclick="location.href='fear.html'">Fear</button>
+            </div>
+            <div class="pink">
+                <button onclick="location.href='anxiety.html'">Anxiety</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
